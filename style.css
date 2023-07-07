@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    position: relative;
+    transition: 1s;
+    z-index: 9;
+}
+#preloader{
+    background: #ffffff url("./images/loader.gif") no-repeat center center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+.container {
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.container.home {
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    height: 38px;
+    width: 42px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    padding: 0 6px;
+    --wid: 15px;
+}
+
+.menu.home {
+    background-color: rgb(26, 4, 230);
+}
+
+.menu:hover {
+    --wid: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+}
+
+.line:last-child {
+    width: var(--wid);
+    transition: 0.5s;
+}
+
+
+
+
+
+.nav-container {
+    height: 100vh;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    transition: all 1s;
+
+
+}
+
+.nav-container.active {
+    transform: translateX(100%);
+
+}
+
+.nav-menu {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.menu-list {
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.submenuitems {
+    list-style: none;
+}
+
+.submenuitems a {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.sub-menu {
+    transition: 2s;
+}
+
+.sub-menu.active {
+    display: none;
+}
+
+.close-icon i {
+    border: 2px solid black;
+    padding: 3px;
+    font-size: 20px;
+    position: absolute;
+    right: 6%;
+}
+
+/* BODY */
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+
+/* SLider */
+.page1 {
+    position: relative;
+}
+
+.slides {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+    transition: 2s;
+    object-fit: cover;
+}
+.slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.slide-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    height: 100%;
+    flex-wrap: wrap;
+ 
+}
+
+.slide-button {
+    display: block;
+    height: 5px;
+    width: 5px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}
+
+.slide-button.active {
+    transform: scale(2.5);
+    filter:drop-shadow(0px 0px 2px white);
+    transition: 0.5s;
+}
+/* after slider */
+.slide-section{
+    z-index: 2;
+    background-color: #00000094;
+    width: 100vw;
+    height: 200px;
+    position: absolute;
+    bottom: 100px;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+.slide-section .box{
+    height: 100%;
+
+}
+.box1{
+    display: flex;
+    align-items: center;
+}
+.box1 img{
+    width: 300px;
+}
+.box2{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.d{
+
+    color: aliceblue;
+    font-weight: 100;
+}
+.d1{
+    flex-grow: 2;
+    display: flex;
+    gap:20px
+    /* justify-content: space-between; */
+}
+
+.cd{
+    width: 20%;
+
+    font-weight: 600;
+}
+.cd img{
+    width: 35px;
+}
+
+
+
+
+@media(max-width: 768px) {
+    .nav-container {
+        width: 100vw;
+    }
+    .box3{
+        display: none;
+    }
+    .slide-section{
+        padding: 15px 50px;
+    }
+    .box1 img{
+        width: 200px;
+    }
+    .d2{
+        display: none;
+    }
+    .d1{
+        flex-direction: column;
+        align-items: end;
+    }
+    .cd{
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 15px;
+    }
+    .box2{
+        padding: 20px 0;
+    }
+}
