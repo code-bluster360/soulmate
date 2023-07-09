@@ -222,7 +222,7 @@ header {
     align-items: center;
 }
 .box1 img{
-    width: 300px;
+    width: 200px;
 }
 .box2{
    
@@ -264,9 +264,10 @@ header {
     }
     .slide-section{
         padding: 15px 50px;
+        height: 150px;
     }
     .box1 img{
-        width: 200px;
+        width: 125px;
     }
     .d2{
         display: none;
@@ -274,6 +275,8 @@ header {
     .d1{
         flex-direction: column;
         align-items: end;
+        gap: 0;
+        justify-content: space-around;
     }
     .cd{
         width: auto;
@@ -283,6 +286,6 @@ header {
         gap: 15px;
     }
     .box2{
-        padding: 20px 0;
+        padding: 0;
     }
 }
