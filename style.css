@@ -465,7 +465,14 @@ header {
     transition: scale 1s;
 }
 
-
+/* ------------------------------section4-------------------------------- */
+.section4{
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 
 
 
