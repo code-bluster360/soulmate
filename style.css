@@ -6,6 +6,7 @@
     box-sizing: border-box;
     --black : #1b1b1b;
     --blue : #223756;
+    --offWhite: ##EFEFEF;
 }
 /* repeated */
 .image-container{
@@ -437,7 +438,8 @@ header {
     gap: 20px;
 }
 .card{
-    flex: 0 0 225px;;
+    flex: 0 0 210px;
+    height: 400px;
     background-color: #ffffff88;
     display: flex;
     flex-direction: column;
@@ -467,6 +469,7 @@ header {
 
 /* ------------------------------section4-------------------------------- */
 .section4{
+    background-color: var(--offWhite);
     padding: 100px 20px;
     display: flex;
     flex-direction: column;
