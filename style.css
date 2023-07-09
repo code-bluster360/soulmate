@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
