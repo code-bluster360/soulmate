@@ -6,7 +6,7 @@
     box-sizing: border-box;
     --black : #1b1b1b;
     --blue : #223756;
-    --offWhite: ##EFEFEF;
+    --offWhite: #EFEFEF;
 }
 /* repeated */
 .image-container{
@@ -89,7 +89,7 @@ a.button{
 }
 .button:hover,
 .button:focus{
-    border: none;
+    border-color: var(--blue);
     color: #fff;
 }
 
@@ -467,6 +467,7 @@ header {
     transition: scale 1s;
 }
 
+
 /* ------------------------------section4-------------------------------- */
 .section4{
     background-color: var(--offWhite);
@@ -477,11 +478,48 @@ header {
     gap: 50px;
 }
 
+/* ----------------------section5-------------------------------- */
+.section5{
+    padding: 100px 90px;
+}
+.s4container{
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 0;
+}
+.s4cb{
+    width: 50%;
+    background: var(--offWhite);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 
+}
+.s4cb:hover{
+    transform: translateY(-5px);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.404));
+    transition: all 0.5s ease-in;
+    
 
-
-
-
+}
+.s4cb img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.s4cb a{
+    margin: 20px 0;
+}
+.s4cb .heading{
+    font-weight: 700;
+    font-size: 20px;
+}
 
 
 
@@ -542,6 +580,12 @@ header {
     .ii-div{
         padding-right: 0;
     }
+    .s4container{
+        flex-direction: column;
+    }
+    .s4cb{
+        width: 100%;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -551,4 +595,7 @@ header {
     .i-div{
         margin-bottom: 50px;
     }
+    .section5{
+        padding: 100px 20px;
+}
 }
