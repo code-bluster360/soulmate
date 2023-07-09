@@ -417,6 +417,54 @@ header {
 
 
 
+/* ------------------section 3----------------------------------------------- */
+.section3{
+    background: url(./images/sectionBG.jpg) no-repeat center/cover;
+    padding: 40px 90px;
+    min-height: 600px;
+    overflow-x: auto;
+}
+.section3 .heading{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    flex: 0 0 225px;;
+    background-color: #ffffff88;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap:25px;
+    padding: 40px;
+}
+.card img{
+    height: 40px;
+}
+.ctitle{
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.card .icon{
+    font-size: 30px;
+    color: #464646;
+}
+.card:hover{
+    background-color: #ffffffc5;
+    scale: 1.05;
+    transition: scale 1s;
+}
+
 
 
 
