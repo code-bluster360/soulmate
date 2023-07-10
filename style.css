@@ -533,6 +533,9 @@ header {
     width: 30%;
     color: #fff;
 }
+.fb .para{
+    text-align: left;
+}
 .fb img{
     width: 150px;
 }
@@ -553,6 +556,10 @@ header {
  scale: 1.05;
     transition: scale 0.3s ease-in-out;
    color: var(--blue);
+}
+.fb.lb{
+    display: flex;
+    justify-content: end;
 }
 .copyright{
     background-color: #313135;
@@ -635,7 +642,15 @@ header {
     }
     .fb{
         width: 100%;
+        text-align: center;
     }
+    .fb.lb{
+        display: none;
+    }
+    .fb .para{
+        text-align: center;
+    }
+    
 }
 
 
