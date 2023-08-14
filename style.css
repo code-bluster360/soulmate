@@ -180,7 +180,6 @@ header {
     right: 0%;
     transition: all 1s;
 
-
 }
 
 .nav-container.active {
@@ -212,6 +211,9 @@ header {
 
 .submenuitems {
     list-style: none;
+    display: flex;
+    position: relative;
+    left: 50%;
 }
 
 .submenuitems a {
@@ -219,6 +221,7 @@ header {
     font-size: 18px;
     text-transform: capitalize;
     transition: 0.5s;
+    text-align: start;
 }
 
 .sub-menu {
@@ -565,11 +568,127 @@ header {
     background-color: #313135;
     min-height: 30px;
 }
+
+.copyright a {
+    text-decoration: none;
+    color: #6cacff;
+}
 /* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+.page_header{
+    height: 80vh;
+    width: 100vw;
+    background-color: #223756;
+    background: url("images/Header_image.jpg");
+    background-position: center;
+    position: relative;
+}
+.header_title{
+    position: absolute;
+    bottom: 15%;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 30px;
+    font-weight: 500;
+}
 
 
 
 
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------Profile------------------------------------- */
+.profile .about{
+    margin: 50px auto;
+    padding: 0 200px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+
+}
+.cmt{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cmmb{
+    padding: 30px 30px;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------Contact------------------------------------- */
+.contact{
+    height: 100vh;
+    width: 100vw;
+    background:rgb(61, 61, 61);
+    padding: 0 400px;
+}
+#contact{
+    background: url("images/img-hi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ctitle .heading{
+    padding: 30px 0;
+    color: #fff;
+    font: 300;
+    font-size: 30px;
+}
+.contact label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.contact input,select{
+    background-color: rgb(61, 61, 61);
+    border: 1px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.contact select{
+    width: 100%;
+}
+.contact input[type=submit]{
+    width: 20%;
+    
+}
+
+#form{
+    
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+
+
+}
 
 
 
@@ -650,6 +769,18 @@ header {
     .fb .para{
         text-align: center;
     }
+    .page_header{
+        height: 50vw;
+    }
+    .header_title{
+        font-size: 20px;
+    }
+    .profile .about{
+        padding: 10px;
+    }
+    .contact{
+        padding: 0 10px;
+    }
     
 }
 
@@ -665,5 +796,8 @@ header {
     }
     .section5{
         padding: 100px 20px;
-}
+    }
+    .contact{
+        padding: 0 100px;
+    }
 }

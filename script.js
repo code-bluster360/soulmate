@@ -60,6 +60,32 @@ subMenu.addEventListener('click', () => {
   const sItems = document.querySelector(".sm1")
   sItems.classList.toggle("active")
 })
+const subMenu2 = document.querySelector("#sm2")
+subMenu2.addEventListener('click', () => {
+  const sItems = document.querySelector(".sm2")
+  sItems.classList.toggle("active")
+})
+const subMenu3 = document.querySelector("#sm3")
+subMenu3.addEventListener('click', () => {
+  const sItems = document.querySelector(".sm3")
+  sItems.classList.toggle("active")
+})
+const subMenu4 = document.querySelector("#sm4")
+subMenu4.addEventListener('click', () => {
+  const sItems = document.querySelector(".sm4")
+  sItems.classList.toggle("active")
+})
+const subMenu5 = document.querySelector("#sm5")
+subMenu5.addEventListener('click', () => {
+  const sItems = document.querySelector(".sm5")
+  sItems.classList.toggle("active")
+})
+const subMenu6 = document.querySelector("#sm6")
+subMenu6.addEventListener('click', () => {
+  const sItems = document.querySelector(".sm6")
+  sItems.classList.toggle("active")
+})
+
 
 
 
