@@ -690,6 +690,49 @@ header {
 
 }
 
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------Coming Soon------------------------------------- */
+.comings{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, #223756, rgba(255, 0, 150, 0.3)), url(images/hateerjheel.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.comings p{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
